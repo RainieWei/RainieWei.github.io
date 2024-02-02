@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+
+<title>Assignment 1</title>
+
+<!--引用字体-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+
+<!--css-->
+<style type="text/css">
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+	body, html {
+		margin: 0;
+		padding: 0;
+	}
+	.center { display: block; margin-left: auto; margin-right: auto; }
+	.head-container { position: relative; width: 100vw; height: 100vh}
+	.foot-container { position: relative; width: 100vw; height: 50vh; box-sizing: border-box; overflow: hidden; }
+	.bottom { position: absolute; width: 100vw; height: 100vh; top: 0; left: 0; z-index:1; }
+	.top {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:2 }
+	.btn {
+		position: absolute;
+		left: 50%; 
+		transform: translate(-50%);
+		background-color: #2e313a;
+		color:#ffffff; 
+		text-align:center; 
+		border: none; 
+		padding: 15px 30px; 
+		font-size: 18px;
+		font-family: 'Rajdhani', sans-serif;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.btn:hover{background-color: #363b45;}
+	.text-container { display: flex; justify-content: space-between;}
+	.text-container1 { display: flex; height: 200px; justify-content: space-between;}
+	.text-container2 { display: flex; height: 500px; justify-content: space-between;}
+	.text-container3 { display: flex; height: 200px; justify-content: space-between;}
+	.tr-container { display: flex; justify-content: space-between; }
+
+	.image-box, .text-box {
+        width: calc(50% - 1%);
+        margin: 0 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .image-box img {
+        max-width: 100%;
+        height: auto;
+		object-fit:cover;
+        display: block;
+        margin: 0;
+    }
+
+    .text-box {
+        padding: 20px 40px;
+		box-sizing: border-box;
+	}
+	
+	.box1, .box2, .box3 {
+        width: calc(33.33% - 1%);
+        margin: 0 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+	.box1 img {
+		max-height: 100%;
+        width: auto;
+        display: block;
+        margin: 0;
+	}
+
+	.box2 {
+        padding: 20px 40px;
+		box-sizing: border-box;
+	}
+
+	.box3 img {
+		max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+	}
+
+	.foot-box {
+		width: 280px;
+	}
+
+	.tr{
+		/* width: 100%; */
+		height: 350px;
+		/* background-color:#2e313a; */
+		margin: 20px;
+	}
+	.tr_img{
+		width: 380px;
+		height: 300px;
+		background-color:#2e313a;
+		position:relative;
+    	overflow:hidden;
+		margin: 0 auto
+	}
+	.tr_img_img{
+    	display: block;
+    	width: 100%;
+    	height: auto;
+		/* object-fit:cover; */
+		position: absolute;
+	}
+	.tr_text{
+		padding-top: 10px;
+		color:dimgray;
+	}
+	.tr_price{
+		color:dimgray;
+		text-align: left;
+	}
+
+</style>
+
+</head>
+
+<body>
+<!--标题-->
+<header>
+	<div class="head-container">
+		<img src="the-organic-crave-gkjwrtieE98-unsplash.jpg" class="bottom">
+		<div class="top">
+			<img src="IMG_7801.PNG" width="500" height="370">
+			<br><br><br>
+			<h1 style="font-family: 'Rajdhani', sans-serif; color:#ffffff; text-align:center">Team 10 - Monet's Garden</h1>
+			<br>
+		</div>
+	</div>
+</header>
+<h1 style="text-align: center;"> BUY & TASTE</h1>
+<h2 style="text-align: center;"> Items will be delivered to your home within 1 week</h2>
+<section style="padding: 20px 150px;">
+	<!--一开始的两个并列块-->
+	<table style="width:100%; border-collapse:collapse;">
+		<tr>
+			<th>
+				<div class="tr">
+					<div class="tr_img">
+						<img src="food1.jpg" class="tr_img_img">
+					</div>
+					<div class="tr_text">BITES</div>
+					<div class="tr_price">$6.99</div>
+				</div>
+			</th>
+			<th>
+				<div class="tr">
+					<div class="tr_img">
+						<img src="food2.jpg" class="tr_img_img">
+					</div>
+					<div  class="tr_text">BRUNE</div>
+					<div class="tr_price">$7.99</div>
+				</div>
+			</th>
+			<th>
+				<div class="tr">
+					<div class="tr_img">
+						<img src="food3.jpg" class="tr_img_img">
+					</div>
+					<div class="tr_text">NUTS</div>
+					<div class="tr_price">$9.99</div>
+				</div>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<div class="tr">
+					<div class="tr_img">
+						<img src="drink1.jpg" class="tr_img_img">
+					</div>
+					<div class="tr_text">RIOT</div>
+					<div class="tr_price">$7</div>
+				</div>
+			</th>
+			<th>
+				<div class="tr">
+					<div class="tr_img">
+						<img src="drink2.jpg" class="tr_img_img">
+					</div>
+					<div class="tr_text">ENERGY</div>
+					<div class="tr_price">$8</div>
+				</div>
+			</th>
+			<th>
+				<div class="tr">
+					<div class="tr_img">
+						<img src="drink3.jpg" class="tr_img_img">
+					</div>
+					<div class="tr_text">COFFEE</div>
+					<div class="tr_price">$12</div>
+				</div>
+			</th>
+		</tr>
+	</table>
+	<br>
+
+	<!--三个并列块-->
+
+</section>
+
+<footer>
+	<div class="foot-container">
+		<img src="nora-topicals-AFjGrDq9VkI-unsplash.jpg" class="bottom" style="object-fit: cover;">
+		<div class="top">
+			<br><br>
+			<h1 style="font-family: 'Playfair Display', serif; color:#ffffff; text-align: center; font-size: 35px;">Enjoying healthy and tasty snacks has never been easier!</h1>
+			<br>
+			<div class="text-container3">
+				<div class="foot-box">
+					<img src="715579_699542.png" class="center">
+					<p style="font-family: 'Rajdhani', sans-serif; font-size: 22px; color: #ffffff; font-weight: 700; text-align: center;" class="center">Free Shipping over 200HKD</p>
+				</div>
+				<div class="foot-box">
+					<img src="167466_577543.png" class="center">
+					<p style="font-family: 'Rajdhani', sans-serif; font-size: 22px; color: #ffffff; font-weight: 700; text-align: center;" class="center">Factory direct supply</p>
+				</div>
+				<div class="foot-box">
+					<img src="873835_356706.png" class="center">
+					<p style="font-family: 'Rajdhani', sans-serif; font-size: 22px; color: #ffffff; font-weight: 700; text-align: center;" class="center">Higher discounts for members</p>
+				</div>
+				<div class="foot-box">
+					<img src="231874_966255.png" class="center">
+					<p style="font-family: 'Rajdhani', sans-serif; font-size: 22px; color: #ffffff; font-weight: 700; text-align: center;" class="center">Home delivery</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<p style="font-family: 'Playfair Display', serif; text-align:center; color: #F7A855; font-size: 25px; font-style: italic; font-weight: bold;">Our best seller!</p>
+
+	<hr>
+
+	<h1 style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 40px; font-weight: bold;">TEAM MEMBER INFO</h1>
+
+	<div style="padding: 0px 300px;" class="text-container">
+		<tr>
+			<div>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 25px; font-weight: bold;">Member’s Name</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Zhiying Qiao</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Xiaowen Zhang</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Huiying Zhang</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Yuqian Wei</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Fangyu Zhu</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Xinkai Wang</p>
+			</div>
+			<div>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 25px; font-weight: bold;">Student ID</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">23410779</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">23455977</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">23462299</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">23468777</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">23419369</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">23470259</p>
+			</div>
+			<div>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 25px; font-weight: bold;">Roles</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Project Manager</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Project Manager</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Analyst</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Developer</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Developer</p>
+				<p style="font-family: 'Rajdhani', sans-serif; text-align:center; font-size: 22px;">Tester</p>
+			</div>
+		</tr>
+	</div>
+
+</footer>
+
+</body>
+</html>
